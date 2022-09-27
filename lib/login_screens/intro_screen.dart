@@ -14,6 +14,7 @@ class IntroScreen extends StatelessWidget {
                 fit: BoxFit.fill,
               ),
             ),
+
             Container(
               child: Column(
                 children: [
