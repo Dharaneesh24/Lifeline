@@ -1,4 +1,4 @@
-# sem5_blood_mgmt
+# Blood_mgmt_System
 
 A new Flutter project.
 
