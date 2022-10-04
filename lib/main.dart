@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sem5_blood_mgmt/googleMapScreen.dart';
 import 'package:sem5_blood_mgmt/login_screens/intro_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: IntroScreen(),
+      home: GoogleMapScreen(),
     );
   }
 }
