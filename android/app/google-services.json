@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "944283467118",
+    "project_id": "blood-mgnt",
+    "storage_bucket": "blood-mgnt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944283467118:android:299a4bd5e3fdadf71e957f",
+        "android_client_info": {
+          "package_name": "com.example.sem5_blood_mgmt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944283467118-k1d71dl9iiqdbfnp84pdsifbh4mtof2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAs88x-Ubai3n2lCb5RvsDoFIAgci3HOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944283467118-k1d71dl9iiqdbfnp84pdsifbh4mtof2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
