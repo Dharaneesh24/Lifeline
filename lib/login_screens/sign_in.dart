@@ -13,11 +13,15 @@ class SignInScreen extends StatelessWidget {
           child: Column(
             children: [
               Expanded(
-                flex: 5,
+                flex: 2,
                 child: SizedBox(),
               ),
               Expanded(
-                flex: 18,
+                flex: 16,
+                child: Center(child: Container(child: Image.asset("assets/login_screens/Lifeline_logo.png"),),),
+              ),
+              Expanded(
+                flex: 5,
                 child: SizedBox(),
               ),
               Expanded(
@@ -83,7 +87,7 @@ class SignInScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Don't have an account?",
+                      "Forgot Password?",
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.black.withOpacity(0.42),
@@ -95,8 +99,9 @@ class SignInScreen extends StatelessWidget {
 
                       },
                       child: Text(
-                        "Sign Up",
+                        "click here",
                         style: TextStyle(
+                          decoration: TextDecoration.underline,
                           fontSize: 15,
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -107,7 +112,7 @@ class SignInScreen extends StatelessWidget {
                 ),
               ),
               Expanded(
-                flex: 11,
+                flex: 3,
                 child: SizedBox(),
               ),
               GestureDetector(
@@ -134,14 +139,29 @@ class SignInScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Color(0xffE72D3B).withOpacity(0.5),
                     borderRadius: BorderRadius.circular(21),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Color(0xffE72D3B).withOpacity(0.5),
-                        offset:
-                        Offset(2, 2), // changes position of shadow
-                      ),
-                    ],
                   ),
+                ),
+              ),
+              Expanded(
+                flex: 6,
+                child: SizedBox(),
+              ),
+              Expanded(
+                flex: 2,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Image.asset("assets/login_screens/left_dash.png"),
+                    Text(
+                      "Or Continue with",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.black.withOpacity(0.7),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Image.asset("assets/login_screens/right_dash.png"),
+                  ],
                 ),
               ),
               Expanded(
@@ -159,18 +179,11 @@ class SignInScreen extends StatelessWidget {
                         height: 67,
                         width: 69,
                         child: Center(
-                          child: Image.asset("assets/login_screens/apple_icon.png"),
+                          child: Image.asset("assets/login_screens/google_icon.png"),
                         ),
                         decoration: BoxDecoration(
                           color: Color(0xffE72D3B).withOpacity(0.5),
                           borderRadius: BorderRadius.circular(21),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Color(0xffE72D3B).withOpacity(0.5),
-                              offset:
-                              Offset(2, 2), // changes position of shadow
-                            ),
-                          ],
                         ),
                       ),
                       GestureDetector(
@@ -180,18 +193,11 @@ class SignInScreen extends StatelessWidget {
                           height: 67,
                           width: 69,
                           child: Center(
-                            child: Image.asset("assets/login_screens/google_icon.png"),
+                            child: Image.asset("assets/login_screens/apple_icon.png"),
                           ),
                           decoration: BoxDecoration(
                             color: Color(0xffE72D3B).withOpacity(0.5),
                             borderRadius: BorderRadius.circular(21),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color(0xffE72D3B).withOpacity(0.5),
-                                offset:
-                                Offset(2, 2), // changes position of shadow
-                              ),
-                            ],
                           ),
                         ),
                       ),
