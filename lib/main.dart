@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:sem5_blood_mgmt/dashboard.dart';
 import 'package:sem5_blood_mgmt/googleMapScreen.dart';
 import 'package:sem5_blood_mgmt/login_screens/intro_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:sem5_blood_mgmt/profile.dart';
 
 const AndroidNotificationChannel channel = AndroidNotificationChannel(
     'high_importance_channel', // id
@@ -47,7 +49,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: GoogleMapScreen(),
+      home: Dashboard(),
     );
   }
 }

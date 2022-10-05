@@ -1,6 +1,7 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:sem5_blood_mgmt/googleMapScreen.dart';
 import 'package:sem5_blood_mgmt/login_screens/sign_in.dart';
 import 'package:sem5_blood_mgmt/main.dart';
 
@@ -105,10 +106,12 @@ class _IntroScreenState extends State<IntroScreen> {
                       ),
                     ),
                     Text(
-                      "Donate Blood",
+                      """\nBe  the reason for someone’s heartbeat.\nSaving a life won’t cost you anything.\nGo ahead and donate blood.
+                    """,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
+                        color: Colors.black.withOpacity(0.8),
                       ),
                     ),
                     SizedBox(
@@ -154,31 +157,6 @@ class _IntroScreenState extends State<IntroScreen> {
                                   ),
                                 ],
                               ),
-                            ),
-                          ),
-                          Container(
-                            width: 100,
-                            height: 50,
-                            child: Center(
-                              child: Text(
-                                'Sign Up',
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                            decoration: BoxDecoration(
-                              color: Colors.grey.withOpacity(0.5),
-                              borderRadius: BorderRadius.circular(10),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.white,
-                                  offset:
-                                  Offset(2, 2), // changes position of shadow
-                                ),
-                              ],
                             ),
                           ),
                         ],
