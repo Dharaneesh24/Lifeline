@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sem5_blood_mgmt/login_screens/intro_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
 
@@ -20,9 +21,14 @@ class ProfileScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Icon(
-                              Icons.arrow_back,
-                              color: Colors.white,
+                            GestureDetector(
+                              onTap: (){
+                                Navigator.pop(context);
+                              },
+                              child: Icon(
+                                Icons.arrow_back,
+                                color: Colors.white,
+                              ),
                             ),
                             Text(
                               "Your Profile",
@@ -221,33 +227,41 @@ class ProfileScreen extends StatelessWidget {
                         height: 1,
                         thickness: 1,
                       ),
-                      Container(
-                        padding: EdgeInsets.only(left: 30, top: 15, bottom: 15),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        height: 90,
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.logout_outlined,
-                              size: 40,
-                              color: Colors.black.withOpacity(0.7),
-                            ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Container(
-                              child: Text(
-                                "Logout",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20,
+                      GestureDetector(
+                        onTap: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => IntroScreen()),
+                          );
+                        },
+                        child: Container(
+                          padding: EdgeInsets.only(left: 30, top: 15, bottom: 15),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          height: 90,
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.logout_outlined,
+                                size: 40,
+                                color: Colors.black.withOpacity(0.7),
+                              ),
+                              SizedBox(
+                                width: 20,
+                              ),
+                              Container(
+                                child: Text(
+                                  "Logout",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 20,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ],

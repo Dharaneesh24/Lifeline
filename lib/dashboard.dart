@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sem5_blood_mgmt/googleMapScreen.dart';
+import 'package:sem5_blood_mgmt/profile.dart';
 
 import 'constants.dart';
 
@@ -26,7 +28,7 @@ class Dashboard extends StatelessWidget {
       backgroundColor: Color(0xFFEEEAEF),
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 20),
+          padding: EdgeInsets.symmetric(horizontal: 15),
           child: ListView(
             children: [
               SizedBox(
@@ -37,7 +39,16 @@ class Dashboard extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Image.asset("assets/dashboard/dashboard_img.png"),
+                      GestureDetector(
+                        onTap: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => ProfileScreen()),
+                          );
+                        },
+                        child:
+                            Image.asset("assets/dashboard/dashboard_img.png"),
+                      ),
                       SizedBox(
                         width: 10,
                       ),
@@ -218,6 +229,71 @@ class Dashboard extends StatelessWidget {
               SizedBox(
                 height: 25,
               ),
+              Image.asset("assets/dashboard/history_don.png"),
+              SizedBox(
+                height: 25,
+              ),
+              Container(
+                height: 130,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Image.asset("assets/dashboard/next_don.png"),
+                          Text(
+                            "Next Donation\n  24/12/2022",
+                            style: TextStyle(
+                              fontSize: 14,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Image.asset("assets/dashboard/blood.png"),
+                          Text(
+                            "Blood Type\n       B+",
+                            style: TextStyle(
+                              fontSize: 14,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => GoogleMapScreen()),
+                        );
+                      },
+                      child: Container(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Image.asset("assets/dashboard/location.png"),
+                            Text(
+                              "Location",
+                              style: TextStyle(
+                                fontSize: 14,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 25,
+              ),
             ],
           ),
         ),
@@ -283,8 +359,7 @@ class BBNearby extends StatelessWidget {
 class HistoryCard extends StatelessWidget {
   final String title;
   final String subtitle;
-  HistoryCard(
-      {required this.title, required this.subtitle});
+  HistoryCard({required this.title, required this.subtitle});
   @override
   Widget build(BuildContext context) {
     return Container(
