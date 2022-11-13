@@ -2,8 +2,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:geolocator/geolocator.dart';
+
 class GoogleMapScreen extends StatefulWidget {
   const GoogleMapScreen({Key? key}) : super(key: key);
 
@@ -11,7 +13,7 @@ class GoogleMapScreen extends StatefulWidget {
   State<GoogleMapScreen> createState() => _GoogleMapScreenState();
 }
 
-class _GoogleMapScreenState extends State<GoogleMapScreen> {
+class _GoogleMapScreenState extends State<GoogleMapScreen> with TickerProviderStateMixin{
   GoogleMapController? _googleMapController;
   Set<Marker> _markers = {};
   Position? _currentPosition=null;
@@ -62,18 +64,6 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
           icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueGreen),
         ),
       );
-      // _markers.add(
-      //   Marker(
-      //     markerId: MarkerId("id-2"),
-      //     position: LatLng(
-      //         11.0201427,77.0063717
-      //     ),
-      //     infoWindow: InfoWindow(
-      //         title: "PSG Hospitals",
-      //         snippet: "Private Hospital"
-      //     ),
-      //   ),
-      // );
     });
   }
 
@@ -128,10 +118,13 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
     _getCurrentPosition() ;
     getMarkerData();
   }
+
+
   @override
   void dispose() {
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -139,7 +132,6 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
       appBar: AppBar(
         backgroundColor: Color(0xffE72D3B).withOpacity(0.3),
         title: Text("Locate Blood Banks/Hospitals"),
-
       ),
       body: _currentPosition!=null?
       GoogleMap(
@@ -156,7 +148,16 @@ class _GoogleMapScreenState extends State<GoogleMapScreen> {
         ),
       )
       :
-          Container(child: Center(child: Text("Loading"),),),
+      Container(
+        color: Color(0xFFF5F5F5),
+        child: Center(
+          child: SpinKitWave(
+            color: Color(0xffE72D3B).withOpacity(0.8),
+            size: 40.0,
+            controller: AnimationController(vsync: this, duration: const Duration(milliseconds: 1000)),
+          ),
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.white,
           foregroundColor: Colors.black,

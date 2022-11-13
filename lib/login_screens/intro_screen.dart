@@ -85,8 +85,9 @@ class _IntroScreenState extends State<IntroScreen> {
             children: [
               Container(
                 width: double.maxFinite,
+                height: double.maxFinite,
                 child: Image.asset("assets/login_screens/Background.png",
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                 ),
               ),
 
