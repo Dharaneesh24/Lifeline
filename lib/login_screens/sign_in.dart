@@ -1,11 +1,42 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
 import '../dashboard.dart';
 
-class SignInScreen extends StatelessWidget {
+class SignInScreen extends StatefulWidget {
+  const SignInScreen({Key? key}) : super(key: key);
+
+  @override
+  State<SignInScreen> createState() => _SignInScreenState();
+}
+
+class _SignInScreenState extends State<SignInScreen> {
+
+  Map<String, Object> loginmap = {};
+  getLoginDetails() async{
+    FirebaseFirestore.instance.collection("donors").get().then((myMockData) {
+      if(myMockData.docs.isNotEmpty){
+        for(int i=0;i<myMockData.docs.length ; i++){
+          print(myMockData.docs[i].data());
+          loginmap[myMockData.docs[i].data()['email']]=myMockData.docs[i].data()["password"] ;
+        }
+      }
+      print(loginmap);
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getLoginDetails();
+  }
+
   @override
   Widget build(BuildContext context) {
+    String email ="" ;
+    String password="" ;
+
     return Scaffold(
       backgroundColor: Color(0xFFF5F5F5),
       body: SafeArea(
@@ -41,6 +72,7 @@ class SignInScreen extends StatelessWidget {
                       horizontal: 35),
                   child: TextField(
                     onChanged: (value) {
+                      email = value ;
                     },
                     keyboardType: TextInputType.emailAddress,
                     textAlign: TextAlign.left,
@@ -64,6 +96,7 @@ class SignInScreen extends StatelessWidget {
                       horizontal: 35),
                   child: TextField(
                     onChanged: (value) {
+                      password=value ;
                     },
                     keyboardType: TextInputType.emailAddress,
                     obscureText: true,
@@ -99,7 +132,7 @@ class SignInScreen extends StatelessWidget {
 
                       },
                       child: Text(
-                        "click here",
+                        "Click here",
                         style: TextStyle(
                           decoration: TextDecoration.underline,
                           fontSize: 15,
@@ -117,10 +150,24 @@ class SignInScreen extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: (){
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Dashboard(),),
-                  );
+                  print(email) ;
+                  print(password) ;
+                  if(!loginmap.containsKey(email)){
+                    print("not registered") ;
+                    // you have not registered yet
+                  }
+                  else if(loginmap[email] != password){
+                    print("wrong password") ;
+                    // your password is wrong
+                  }
+                  else if(loginmap.containsKey(email) && loginmap[email] == password){
+                    //Successfully logged in
+                    print("logged in") ;
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Dashboard(email: email,),),
+                    );
+                  }
                 },
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 35),
