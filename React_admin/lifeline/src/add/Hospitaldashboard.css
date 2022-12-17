@@ -1,0 +1,588 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two columns that floats next to each other */
+  .column1 {
+    float: left;
+    width: 22%;
+    padding: 10px;
+    
+   
+  }
+  .column2 {
+    float: left;
+    width: 78%;
+    /* padding: 10px; */
+    
+    
+  }
+  
+  /* Clear floats after the columns */
+  .rowa:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+.odinMainContainer
+{
+  width:98%;
+  min-width:98%;
+  max-width:98%;
+  height:90%;
+  /* height:95vh; */
+  min-height:95%;
+  overflow:hidden;
+  padding:1%;
+   margin:0;
+  display: -webkit-flex;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-self:auto;
+  align-items:flex-start;
+  align-content:flex-start;
+  
+}
+
+
+
+.odinLeftSidebarContainer
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:30%;
+  min-height:30%;
+  overflow:hidden;
+
+}
+
+.odinMainContentContainer
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:70%;
+  min-height:70%;
+  overflow:hidden;
+}
+
+/* LOGO Two columns that floats next to each other */
+.columnlogo1 {
+    float: left;
+    width: 40%;
+  }
+  .columnlogo2 {
+    float: left;
+    width: 60%;
+    padding:8px;
+  }  
+ 
+  /* Clear floats after the columns */
+  .rowlogo:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Right Column */
+  
+.odinMainContainer11
+{
+  width:98%;
+  min-width:98%;
+  max-width:98%;
+  height:90%;
+  height:95vh;
+  min-height:95%;
+  overflow:hidden;
+
+  display: -webkit-flex;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-self:auto;
+  align-items:flex-start;
+  align-content:flex-start;
+  
+}
+.odinMainContainer80
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:90%;
+  height:95vh;
+  min-height:95%;
+  overflow:hidden;
+
+  display: -webkit-flex;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-self:auto;
+  align-items:flex-start;
+  align-content:flex-start;
+  
+}
+
+.odinLeftSidebarContainer1
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:30%;
+  min-height:30%;
+  overflow:hidden;
+  
+  
+}
+.odinLeftSidebarContainer80
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:30%;
+  min-height:30%;
+  overflow:hidden;
+  
+  
+}
+
+.odinMainContentContainer8
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:70%;
+  min-height:70%;
+  overflow:hidden;
+  
+}
+.odinMainContentContainer18
+{
+  width:30%;
+  min-width:30%;
+  max-width:30%;
+  height:70%;
+  min-height:70%;
+  overflow:hidden;
+  
+}
+.odinMainContentContainer2 {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 70%;
+  min-height: 70%;
+  overflow: hidden;
+}
+/* ROW 2 */
+/* Two columns */
+
+/* COLUMN 1 */
+.columnright {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  
+  }
+  /* COLUMN 2 */
+.columnright {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+  
+  /* Clear floats after the columns */
+  .rowright:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Text over image */
+  .containera {
+    position: relative;
+    
+  }
+  
+  .text-block {
+   
+    top:10px;
+    right:300px;
+    left:300px;
+   
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    opacity:90%;
+    margin: 0px;
+   
+  }
+.searchTerm{
+     border-radius:15px;
+    height:27px;
+    width:40px;
+    margin: 0px;
+    
+ }
+.wrap {
+    width: 80%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* elon */
+  .elon{
+    background-color: lightgrey;
+    
+    border-radius:8px;
+   
+    margin: 20px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .rowelon {
+    display: flex;
+  }
+  
+  
+  .columnelon1 {
+    flex: 20%;
+    
+   
+  }
+  .columnelon2 {
+    flex: 80%;
+    
+   
+  }
+  table {
+    border-collapse: collapse;
+    width: 30%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .leftx {
+    float: left;
+    width: 30%;
+    background-color:#F5F5F5;
+    height: 105%;
+  }
+  
+  .rightx {
+    float: left;
+    width: 70%;
+    background-color:rgba(231, 45, 59, 0.4);
+    align-self:baseline;
+    height: 105%;
+  }
+  
+  /* Clear floats after the columns */
+  .r:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*column2_split */
+  .odinMain
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:100%;
+  height:95vh;
+  min-height:95%;
+  overflow:hidden;
+  margin:0;
+  display: -webkit-flex;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-self:auto;
+  align-items:flex-start;
+  align-content:flex-start;
+}
+
+
+
+.odinLeftSidebar
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:60%;
+  min-height:60%;
+  overflow:hidden;
+  padding:1%;
+  margin:0;
+}
+.row2{
+ 
+    width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:40%;
+  min-height:40%;
+  overflow:hidden;
+}
+
+.main
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:30%;
+  min-height:30%;
+  overflow:hidden;
+}
+.odinMainContent2
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  min-height:20%;
+  overflow:hidden;
+}
+/* row2_column_split */
+  
+  /* column1 */
+  .left1 {
+    float: left;
+    width: 50%;
+  }
+  /* column2 */
+  .right1 {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*  rows in column1 */
+  .c_r
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:100%;
+  height:95vh;
+  min-height:95%;
+  overflow:hidden;
+  padding:1%;
+  margin:0;
+  display: -webkit-flex;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-self:auto;
+  align-items:flex-start;
+  align-content:flex-start;
+ 
+}
+
+
+
+.c1_r1
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:20%;
+  overflow:hidden;
+  
+}
+
+.c1_r2
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:20%;
+  overflow:hidden;
+  
+}
+.c1_r3
+{
+  width:98%;
+  min-width:98%;
+  max-width:98%;
+  height:40%;
+  overflow:hidden;
+  padding:1%;
+  margin:0;
+  
+}
+
+.c1_r4
+{
+  width:98%;
+  min-width:98%;
+  max-width:98%;
+  height:20%;
+  overflow:hidden;
+  padding:1%;
+  margin:0;
+
+} 
+
+  
+.r1_c1 {
+    float: left;
+    width: 50%;
+  }
+  
+  .r1_c2 {
+    float:left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .c1_r1_c:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+    .container1{  
+        text-align: center;   
+        width: 300px;  
+        height: 200px;  
+        padding:50px;
+        
+        }  
+        #btn1{  
+            position: absolute;
+            width: 200px;
+            height:50px;
+            right:1000px;
+            
+            background:rgba(231, 45, 59, 0.4);
+            border-radius: 30px;
+        }   
+            .submit{  
+                position: absolute;
+                width: 200px;
+                height:50px;
+                right:400px;
+                top:600px;
+                
+                background: #D9D9D9;
+                border-radius: 30px;
+            } 
+
+.form_field{
+height:35px;
+width:322px;
+background: #D9D9D9;
+border-radius: 20px;
+border:0px;
+}
+.hospitalname{
+
+font-style: normal;
+font-weight: 500;
+
+line-height: 24px;
+color: #000000;
+}
+/* 
+.box{
+   width:33px;
+   height:20px;
+    left: 734px;
+    top: 781px;
+    background: #D9D9D9;
+    accent-color: green;
+} */
+/* 
+.name{
+   
+font-style: normal;
+color: #000000;
+
+} */
+
+/* .sub_name{
+    
+    font-style: normal;
+    font-weight: 500;
+
+    color: rgba(0, 0, 0, 0.51);
+    
+} */
+/* check box columns */
+.bloodrequesttypecolumn {
+  float: left;
+  width: 50%;
+   /* Should be removed. Only for demonstration */
+}
+
+
+.bloodrequesttyperow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ #submitbutton{  
+  position: absolute;
+  top:570px;
+  width: 400px;
+  height:50px;
+  right:400px;
+  
+  background:#aaa;
+  border-radius: 30px;
+}  
+
+/* Create three equal columns that floats next to each other */
+.xxx {
+  float: left;
+  width: 33.3%;
+  padding: 10px;
+ 
+}
+.yyy {
+  float: left;
+  width: 33.3%;
+  padding: 10px;
+ 
+}
+.zzz {
+  float: left;
+  width:33.3%;
+  padding: 10px;
+  
+}
+
+
+.xyz:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* end of three columns */

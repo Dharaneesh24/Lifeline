@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  
+.left {
+    float: left;
+    width: 30%;
+    background-color:#F5F5F5;
+  }
+  
+  .right {
+    float: left;
+    width: 70%;
+    background-color:rgba(231, 45, 59, 0.4);
+    align-self:baseline;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /*column2_split */
+  .odinMain
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:100%;
+  height:95vh;
+  min-height:95%;
+  overflow:hidden;
+  margin:0;
+  display: -webkit-flex;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-self:auto;
+  align-items:flex-start;
+  align-content:flex-start;
+}
+
+
+
+.odinLeftSidebar
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:100%;
+  min-height:100%;
+  overflow:hidden;
+  padding:1%;
+  margin:0;
+}
+.row2{
+ 
+    width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:35%;
+  min-height:35%;
+  overflow:hidden;
+}
+
+.odinMainContent
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:30%;
+  min-height:30%;
+  overflow:hidden;
+}
+.odinMainContent2
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  min-height:20%;
+  overflow:hidden;
+}
+/* row2_column_split */
+  
+  /* column1 */
+  .left1 {
+    float: left;
+    width: 50%;
+  }
+  /* column2 */
+  .right1 {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*  rows in column1 */
+  .c_r
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:100%;
+  height:95vh;
+  min-height:95%;
+  overflow:hidden;
+  padding:1%;
+  margin:0;
+  display: -webkit-flex;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-self:auto;
+  align-items:flex-start;
+  align-content:flex-start;
+ 
+}
+
+
+
+.c1_r1
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:20%;
+  overflow:hidden;
+  
+}
+
+.c1_r2
+{
+  width:100%;
+  min-width:100%;
+  max-width:100%;
+  height:20%;
+  overflow:hidden;
+  
+}
+.c1_r3
+{
+  width:98%;
+  min-width:98%;
+  max-width:98%;
+  height:40%;
+  overflow:hidden;
+  padding:1%;
+  margin:0;
+  
+}
+
+.c1_r4
+{
+  width:98%;
+  min-width:98%;
+  max-width:98%;
+  height:20%;
+  overflow:hidden;
+  padding:1%;
+  margin:0;
+
+} 
+
+  
+.r1_c1 {
+    float: left;
+    width: 50%;
+  }
+  
+  .r1_c2 {
+    float:left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .c1_r1_c:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+    .container1{  
+        text-align: center;   
+        width: 300px;  
+        height: 200px;  
+        padding:50px;
+        }  
+        #btn1{  
+            position: absolute;
+            width: 200px;
+            height:50px;
+            right:1000px;
+            
+            background:rgba(231, 45, 59, 0.4);
+            border-radius: 30px;
+        }   
+            .submit{  
+                position: absolute;
+                width: 200px;
+                height:50px;
+                right:400px;
+                top:600px;
+                
+                background: #D9D9D9;
+                border-radius: 30px;
+            } 
+
+.form_field{
+height:35px;
+width:322px;
+background: #D9D9D9;
+border-radius: 20px;
+border:0px;
+}
+.field_name{
+
+font-style: normal;
+font-weight: 500;
+
+line-height: 24px;
+color: #000000;
+}
+
+.box{
+   width:33px;
+   height:20px;
+    left: 734px;
+    top: 781px;
+    background: #D9D9D9;
+    accent-color: green;
+}
+
+.name{
+   
+font-style: normal;
+color: #000000;
+
+}
+
+.sub_name{
+    
+    font-style: normal;
+    font-weight: 500;
+
+    color: rgba(0, 0, 0, 0.51);
+    
+}
+/* check box columns */
+.column00 {
+  float: left;
+  width: 50%;
+   /* Should be removed. Only for demonstration */
+}
+
+
+.row00:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#btn2{  
+  position: absolute;
+  top:570px;
+  width: 400px;
+  height:50px;
+  right:400px;
+  
+  background:#aaa;
+  border-radius: 30px;
+} 
