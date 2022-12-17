@@ -365,6 +365,7 @@ class _DashboardState extends State<Dashboard> with TickerProviderStateMixin{
                             context,
                             MaterialPageRoute(builder: (context) => GoogleMapScreen()),
                           );
+
                         },
                         child: Container(
                           child: Column(
