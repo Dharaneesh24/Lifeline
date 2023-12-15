@@ -11,30 +11,30 @@ This project consists of a website and an application where the Hospitals and Bl
 ## Hospital
 
 ### 1. Login Page     
-<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/28c2bc19-3278-43eb-9223-659fc60bd5ca" width="800" height="400">
+<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/28c2bc19-3278-43eb-9223-659fc60bd5ca" width="700" height="400">
 
 ### 2. Dashboard     
-<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/df3c4fe4-84cc-4b9d-8ff5-a29b632a425e" width="800" height="400">
+<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/df3c4fe4-84cc-4b9d-8ff5-a29b632a425e" width="700" height="400">
 
 ### 3. Blood Procurement Form      
-<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/14026aa9-ed30-41fc-86d7-a744d6df8042" width="800" height="400">
+<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/14026aa9-ed30-41fc-86d7-a744d6df8042" width="700" height="400">
 
 ### 4. Track Donor
-<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/f30ba2ec-b12d-49cb-bde4-177a7de81c6b" width="800" height="400">
+<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/f30ba2ec-b12d-49cb-bde4-177a7de81c6b" width="700" height="400">
 
 ## Blood Bank
 
 ### 1. Dashboard
-<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/0abfb499-340c-4cf3-89cc-eb93d7d12ace" width="800" height="400">
+<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/0abfb499-340c-4cf3-89cc-eb93d7d12ace" width="700" height="400">
 
 ### 2. Blood Requirements
-<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/3b2dd755-2a30-4446-bdb0-df5c92d9d903" width="800" height="400">
+<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/3b2dd755-2a30-4446-bdb0-df5c92d9d903" width="700" height="400">
 
 ### 3. Donor Information
-<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/fa6ab867-b119-410d-9ee4-2abf17272a63" width="800" height="400">
+<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/fa6ab867-b119-410d-9ee4-2abf17272a63" width="700" height="400">
 
 ### 4. Blood Stock Available
-<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/e7deea6a-0f84-4e9a-ba20-b3a96dfbfeb0" width="800" height="400">
+<img src="https://github.com/Kireshvanth/Lifeline/assets/82997176/e7deea6a-0f84-4e9a-ba20-b3a96dfbfeb0" width="700" height="400">
 
 # Moblie Application
 | 1. Welcome Screen  | 2. Login Screen  | 3. Home Screen | 
