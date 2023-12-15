@@ -1,7 +1,5 @@
 # Lifeline
-
-A new Flutter project.
-
+Innovating Blood Care
 ## Blood Management System
 
 The project is based on creating an online platform for managing blood requests and donations.This project links Hospitals , Blood Banks  and Donors. This helps with easy blood donation in all instances and helps reduce the complexity of the situtation.It provides a great interface between different entities.
